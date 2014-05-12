@@ -85,7 +85,7 @@ class Clockwork(object):
         payload = {
                 'key':self.apikey,
                 'to' :to,
-                'content':unicode(message),
+                'content':message.encode('utf-8'),
                 'long':_long,
                 }
 
